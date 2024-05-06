@@ -28,10 +28,11 @@ console.log('Numbers',numbers);
 //Arrays
 let nums:number[]=[1,2,3,4,5,6];
 let arr:any[]=[1,'Nice',true];
+let list:Array<number>=[1,2,3];
 
 //------------------------------------------------------------------------------------------------------------------
 
-//Tuple [immutable],cannot change order of elements
+//Tuple [immutable],cannot change order of elements (No.of elements in an array [any type that should be in order ex:- string,number in an array it should declare the same])
 let person1 :[string,number]=["John",30];
 console.log('Person',person1);
 
@@ -134,6 +135,30 @@ interface MathFunc{
 
 const add : MathFunc =(x:number, y:number): number =>x+y
 const sub : MathFunc =(x:number,y:number):number => x-y
+
+
+function fullName(person:{firstName:string,lastName:string}){
+    console.log(`${person.firstName} ${person.lastName}`)
+}
+
+let combineName={
+    firstName:'ChitreshBabu',
+    lastName:'Alavuru'
+}
+
+fullName(combineName);
+
+
+//To write clean  code we should follow the below rules 
+interface Person {
+    firstName:string;
+    lastName:string;
+}
+
+function totalName(person:Person){
+    console.log(`${person.firstName} ${person.lastName}`);
+}
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
