@@ -19,8 +19,9 @@ console.log('Numbers', numbers);
 //Arrays
 var nums = [1, 2, 3, 4, 5, 6];
 var arr = [1, 'Nice', true];
+var list = [1, 2, 3];
 //------------------------------------------------------------------------------------------------------------------
-//Tuple [immutable],cannot change order of elements
+//Tuple [immutable],cannot change order of elements (No.of elements in an array [any type that should be in order ex:- string,number in an array it should declare the same])
 var person1 = ["John", 30];
 console.log('Person', person1);
 var person2 = [3, 'Chitresh', true];
@@ -75,7 +76,29 @@ console.log("".concat(johnDoe.
     firstName, " ").concat(johnDoe.
     lastName, ". He is ").concat(johnDoe
     .age, " years old."));
-//------------------------------------------------------------------------------------------------------------------
+var user2 = {
+    id: 1,
+    name: 'ChitreshBabu',
+};
+var add = function (x, y) { return x + y; };
+var sub = function (x, y) { return x - y; };
+function fullName(person) {
+    console.log("".concat(person.firstName, " ").concat(person.lastName));
+}
+var combineName = {
+    firstName: 'ChitreshBabu',
+    lastName: 'Alavuru'
+};
+fullName(combineName);
+function totalName(person) {
+    console.log("".concat(person.firstName, " ").concat(person.lastName));
+}
+var p = {
+    firstName: 'Roman',
+    lastName: 'Reigns',
+};
+totalName(p);
+//---------------------------------------------------------------------------------------------------------------------------------------------
 //Functions
 function logInfo() {
     var name = 'Chitresh';
@@ -180,3 +203,21 @@ var Direction2;
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
 console.log(Direction2.Up); //Output=>Up
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+//Void
+function log(message) {
+    console.log(message);
+}
+log('Chit'); //No error because we passed string or number parameters
+// log(3); No error
+//----------------------------------------------------------------------------------------------------------------------------------------------
+//classes 
+var Ezeiatech = /** @class */ (function () {
+    function Ezeiatech(name) {
+        console.log("Good Morning ".concat(this.ceo));
+    }
+    Ezeiatech.prototype.greet = function () {
+        console.log("Good Morning ".concat(this.ceo));
+    };
+    return Ezeiatech;
+}());
