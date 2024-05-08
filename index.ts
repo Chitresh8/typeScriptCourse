@@ -153,12 +153,19 @@ fullName(combineName);
 interface Person {
     firstName:string;
     lastName:string;
+    // lastName?:string; This is optional if we keep lastName or not keep in an object, it will not throw error. Otherwise it will throw an error
 }
 
 function totalName(person:Person){
     console.log(`${person.firstName} ${person.lastName}`);
 }
 
+let p ={
+    firstName:'Roman',
+    lastName:'Reigns',
+}
+
+totalName(p);
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -306,5 +313,18 @@ log('Chit'); //No error because we passed string or number parameters
 
 //classes 
 
+class Ezeiatech {
+    ceo:string;
 
+    constructor (name:string){
+        console.log(`Good Morning ${this.ceo}`);
+    }
 
+    greet() {
+        console.log(`Good Morning ${this.ceo}`);
+    }
+}
+
+let EzeiatechOwner = new Ezeiatech ('Kunal sir');
+console.log(Ezeiatech.ceo);
+EzeiatechOwner.greet();
