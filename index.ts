@@ -328,3 +328,10 @@ class Ezeiatech {
 let EzeiatechOwner = new Ezeiatech ('Kunal sir');
 console.log(Ezeiatech.ceo);
 EzeiatechOwner.greet();
+
+//-------------------------------------------------------------------------------------------------------------------
+//Typescript restarts 02-08-2024
+
+let myName:string='chitresh'
+let numberOfWheels:number=3
+let isStudent:boolean=false
