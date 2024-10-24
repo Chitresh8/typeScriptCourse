@@ -6,5 +6,5 @@ Install Typescript => npm install -g typescript
 Check Typescript version => tsc -v
 To create a file => Ex: main.ts
 Command to check console => Ex: tsc main.ts , it creates js file and give command 'node main.js'
-If we need to change => tsc main --watch and change the data in main.ts, it automatically changes in main .js file....---
+If we need to change => tsc main --watch and change the data in main.ts, it automatically changes in main .js file....
 .......
