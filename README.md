@@ -2,7 +2,7 @@ React Typescript from Basics to Advanced .....
 Restarted 02-08-2024
 Academind,Codevolution & Traversy Media
 Install Node JS and check version => node -v
-Install Typescript => npm install -g typescript
+Install Typescript => npm install -g typescript.
 Check Typescript version => tsc -v
 To create a file => Ex: main.ts
 Command to check console => Ex: tsc main.ts , it creates js file and give command 'node main.js'
