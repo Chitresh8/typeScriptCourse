@@ -1,5 +1,5 @@
 React Typescript from Basics to Advanced ..
-Restarted 02-08-2024
+Restarted 02-08-2024.
 Academind,Codevolution & Traversy Media
 Install Node JS and check version => node -v
 Install Typescript => npm install -g typescript.
